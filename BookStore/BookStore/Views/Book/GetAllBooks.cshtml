@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "GetAllBooks";
+}
+<h3>This page contains list of all books</h3>
+<style>
+
+
+div{
+   
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.boarder{
+    border: 2px solid green;
+}
+.align{
+    text-align : center;
+}
+.img1 {
+  float: left;
+}
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+  }
+  
+</style>
+@foreach (var book in Model){
+   <div class="boarder">
+  <div class="clearfix">
+  <img class="img1" src="https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/07/insert-image-html-3-768x510.jpg" width="170" height="170" >
+  <div class="align">  
+  <h4>
+        ID: @book.Id<br/>
+        Author: @book.Author<br/>
+        Title: @book.Title<br/>
+    </h4>
+    </div>
+</div>
+</div>
+}
+
+<div class ="align"> 
+<h4><button>click here</button></h4>
+
+</div>
