@@ -27,10 +27,12 @@ namespace BookStore.Repository
         private List<BookModel> DataSource()
         {
             return new List<BookModel>(){
-                new BookModel(){Id = 1, Title = "MVC", Author = "A"},
-                new BookModel(){Id = 2, Title = "java", Author = "B"},
-                new BookModel(){Id = 3, Title = "C++", Author = "C"},
-                new BookModel(){Id = 4, Title = "C#", Author = "D"},
+                new BookModel(){Id = 1, Title = "MVC", Author = "A", Description="This is the description of MVC book"},
+                new BookModel(){Id = 2, Title = "java", Author = "B", Description="This is the description of Java book"},
+                new BookModel(){Id = 3, Title = "C++", Author = "C", Description="This is the description of C++ book"},
+                new BookModel(){Id = 4, Title = "C#", Author = "D", Description="This is the description of C# book"},
+                new BookModel(){Id = 5, Title = "Python", Author = "EEE", Description="This is the description of Python book"},
+                new BookModel(){Id = 6, Title = ".NET", Author = "FFFF", Description="This is the description of .NET book"},
 
             };
         }
